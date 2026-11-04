@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sattva City | Mega Township in Devanahalli | North Star Estates</title>
+<meta name="description" content="Sattva City - Mega integrated township near KIADB IT Park & Bengaluru Airport. Plots & premium villas from ₹65 Lakh.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0A192F;--gold:#D4AF37;--light:#F8F9FA;--muted:#8892B0;--card:#112240;}
+*{box-sizing:border-box;margin:0;padding:0;font-family:'Inter',sans-serif;}
+body{background:var(--navy);color:var(--light);line-height:1.6;}
+header{padding:1.5rem 5%;display:flex;justify-content:space-between;align-items:center;background:rgba(10,25,47,0.95);position:sticky;top:0;z-index:100;border-bottom:1px solid rgba(212,175,55,0.2);}
+.logo{font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--gold);}
+.back{color:var(--muted);text-decoration:none;font-size:0.9rem;}
+.back:hover{color:var(--gold);}
+.hero{min-height:85vh;background:linear-gradient(rgba(10,25,47,0.7),rgba(10,25,47,0.92)),url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1920&q=80') center/cover;padding:4rem 5%;}
+.badge{display:inline-block;background:var(--gold);color:var(--navy);padding:0.5rem 1rem;border-radius:4px;font-weight:700;font-size:0.8rem;letter-spacing:2px;margin-bottom:1.5rem;}
+.hero h1{font-family:'Playfair Display',serif;font-size:3.5rem;color:var(--gold);margin-bottom:1rem;}
+.hero p{font-size:1.15rem;color:#CCD6F6;max-width:650px;margin-bottom:2rem;}
+.price-tag{font-size:1.5rem;font-weight:700;color:var(--gold);margin-bottom:2rem;}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;padding:3rem 5%;background:var(--card);}
+.stat h3{color:var(--gold);font-size:1.8rem;font-family:'Playfair Display',serif;}
+.stat p{color:var(--muted);font-size:0.85rem;text-transform:uppercase;letter-spacing:1px;}
+.section{padding:4rem 5%;}
+.section-title{font-family:'Playfair Display',serif;font-size:2.2rem;color:var(--gold);margin-bottom:2rem;text-align:center;}
+.usp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;}
+.usp{padding:2rem;border:1px solid rgba(212,175,55,0.2);border-radius:8px;}
+.usp h4{color:var(--gold);margin-bottom:1rem;font-family:'Playfair Display',serif;font-size:1.3rem;}
+.usp p{color:var(--muted);font-size:0.95rem;}
+.form-section{padding:4rem 5%;background:var(--light);color:var(--navy);}
+.form-wrap{max-width:600px;margin:0 auto;}
+.form-wrap h2{font-family:'Playfair Display',serif;font-size:2.2rem;margin-bottom:0.5rem;}
+.form-wrap>p{color:#4A5568;margin-bottom:2rem;}
+form{display:grid;gap:1rem;}
+input,select{padding:1rem;border:1px solid #E2E8F0;border-radius:6px;font-size:1rem;background:#fff;color:var(--navy);font-family:inherit;}
+input:focus,select:focus{outline:none;border-color:var(--gold);}
+button[type="submit"]{padding:1.2rem;background:var(--navy);color:var(--gold);border:1px solid var(--gold);font-weight:700;font-size:1rem;letter-spacing:1px;text-transform:uppercase;cursor:pointer;border-radius:6px;}
+button[type="submit"]:hover{background:var(--gold);color:var(--navy);}
+button[type="submit"]:disabled{opacity:0.6;cursor:not-allowed;}
+.wa-btn{display:block;text-align:center;padding:1rem;background:#25D366;color:#fff;text-decoration:none;font-weight:700;font-size:1rem;text-transform:uppercase;letter-spacing:1px;border-radius:6px;margin-top:1rem;}
+footer{background:#020C1B;padding:2rem 5%;text-align:center;color:var(--muted);font-size:0.85rem;}
+footer .legal{font-size:0.75rem;margin-top:0.5rem;opacity:0.8;}
+@media(max-width:768px){.hero h1{font-size:2.2rem;}.stats,.usp-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:480px){.stats,.usp-grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<header><div class="logo">NORTH STAR ESTATES</div><a href="/" class="back">← Back to Portfolio</a></header>
+
+<section class="hero">
+<div class="badge">MEGA TOWNSHIP</div>
+<h1>Sattva City</h1>
+<p>Integrated township near KIADB IT Park & Bengaluru International Airport. Plots and premium villas with world-class amenities.</p>
+<div class="price-tag">From ₹65 Lakh*</div>
+</section>
+
+<section class="stats">
+<div class="stat"><h3>200+</h3><p>Acres</p></div>
+<div class="stat"><h3>Plots</h3><p>& Villas</p></div>
+<div class="stat"><h3>15 mins</h3><p>To Airport</p></div>
+<div class="stat"><h3>KIADB</h3><p>IT Park</p></div>
+</section>
+
+<section class="form-section">
+<div class="form-wrap">
+<h2>Register Your Interest</h2>
+<p>Get the price sheet, plot layouts, and EOI priority access.</p>
+<form onsubmit="submitLead(event, 'Sattva City')">
+<input type="text" name="name" placeholder="Full Name *" required minlength="2">
+<input type="tel" name="phone" placeholder="Mobile Number *" required pattern="[+]?[0-9 ]{10,15}">
+<input type="email" name="email" placeholder="Email (optional)">
+<select name="market" required>
+<option value="">Select Interest</option>
+<option value="Devanahalli">Devanahalli / Airport Corridor</option>
+<option value="Other">Other North Bangalore</option>
+</select>
+<select name="budget" required>
+<option value="">Budget Range</option>
+<option value="65 L - 85 L">₹65 L - ₹85 L</option>
+<option value="85 L - 1 Cr">₹85 L - ₹1 Cr</option>
+<option value="1 Cr+">₹1 Cr+</option>
+</select>
+<select name="buyer_type">
+<option value="Unknown">I am a...</option>
+<option value="Investor">Investor</option>
+<option value="End-user">End-user</option>
+</select>
+<button type="submit">Request Price Sheet</button>
+</form>
+<a href="https://wa.me/918904602225?text=Hi%20North%20Star%2C%20I%27m%20interested%20in%20Sattva%20City.%20Please%20share%20details." target="_blank" class="wa-btn">💬 Chat on WhatsApp</a>
+</div>
+</section>
+
+<section class="section">
+<h2 class="section-title">Project Highlights</h2>
+<div class="usp-grid">
+<div class="usp"><h4>Mega Township</h4><p>200+ acre master-planned community with retail, schools, and healthcare within the township.</p></div>
+<div class="usp"><h4>Airport Corridor</h4><p>15 minutes to Bengaluru International Airport. Close to KIADB IT Park and Aerospace Park.</p></div>
+<div class="usp"><h4>World-Class Amenities</h4><p>Massive clubhouse, multiple pools, sports courts, jogging tracks, landscaped gardens.</p></div>
+</div>
+</section>
+
+<footer>
+<p>© 2026 North Star Estates. RERA Registration Pending / Channel Partner Accreditation in Progress.</p>
+<p class="legal">North Star Estates operates as an independent real estate marketing partner. Prices indicative, subject to change.</p>
+</footer>
+<script type="module" src="/lead-form.js"></script>
+</body>
+</html>
